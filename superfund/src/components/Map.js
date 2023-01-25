@@ -32,15 +32,6 @@ export class MapContainer extends Component {
         initialCenter={{ lat: 38, lng: -78 }}
       >
         {markers}
-        {/* for (let i = 0; i < locations.length; i ++) {
-          const latLng = {locations[i]["LATITUDE"],
-          locations[i]["LONGITUDE"]};
-
-          new google.maps.Marker({
-            position: latLng,
-            map: map 
-          })
-        }; */}
       </Map>
     );
   }
