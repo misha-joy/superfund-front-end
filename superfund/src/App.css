@@ -1,0 +1,30 @@
+
+html {
+    background-color: #d7e8ebff;
+}
+.Nav-Bar {
+    text-align: center;
+    display: inline;
+    padding: 100px;
+    list-style: none;
+    
+    
+}
+
+
+li {
+    
+    margin-top: 15%;
+    display: inline;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#Map{
+    background-color: transparent;
+}
+.Map-Container {
+    padding-left: 5%;
+    /* border: solid red 3px; */
+}

@@ -5,10 +5,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <nav>
         {" "}
-        <ul>
+        <ul className="Nav-Bar">
           <li>health outcomes</li>
           <li>environmental impact</li>
           <li>take action</li>
@@ -18,7 +18,9 @@ function App() {
         </ul>
       </nav>
       <h1>Site Title</h1>
-      <Map className="Map-Container" />
+      <div className="Map-Container">
+        <Map id="Map" />
+      </div>
     </div>
   );
 }
