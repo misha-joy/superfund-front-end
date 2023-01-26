@@ -1,46 +1,66 @@
-import React, { Component, useState } from 'react';
+import { GoogleMap, Marker, InfoWindow } from '@react-google-maps/api';
+import React from 'react';
 import locations from '../data/location.json';
-import PropTypes from 'prop-types';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
-// import { MarkerClusterer } from '@googlemaps/markerclusterer';
+import { useState } from 'react';
 import CustomMarker from '../assets/Blue.png';
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const Map = (props) => {
+  const { isLoaded } = props;
+  const [selectedMarker, setSelectedMarker] = useState('');
+  const containerStyle = {
+    width: '400px',
+    height: '400px',
+  };
+  const center = {
+    lat: 39.833333,
+    lng: -98.583333,
+  };
 
-const markers = locations.map((item) => {
+  const markers = locations;
+
   return (
-    <Marker
-      key={item['SITE_NAME']}
-      position={{
-        lat: item['LATITUDE'],
-        lng: item['LONGITUDE'],
-      }}
-      options={{
-        icon: CustomMarker,
-      }}
-    />
+    isLoaded && (
+      <>
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={3}>
+          {markers.map((marker) => {
+            return (
+              <div key={marker['SITE_ID']}>
+                <Marker
+                  position={{
+                    lat: marker['LATITUDE'],
+                    lng: marker['LONGITUDE'],
+                  }}
+                  options={{ icon: CustomMarker }}
+                  onClick={() => {
+                    setSelectedMarker(marker);
+                  }}
+                />
+              </div>
+            );
+          })}
+          {selectedMarker && (
+            <InfoWindow
+              position={{
+                lat: selectedMarker['LATITUDE'],
+                lng: selectedMarker['LONGITUDE'],
+              }}
+            >
+              <>
+                <h1>{selectedMarker['SITE_NAME']}</h1>
+                <button
+                  onClick={() => {
+                    setSelectedMarker('');
+                  }}
+                >
+                  Close
+                </button>
+              </>
+            </InfoWindow>
+          )}
+        </GoogleMap>
+      </>
+    )
   );
-});
-
-const mapStyles = {
-  width: '45%',
-  height: '45%',
 };
-export class MapContainer extends Component {
-  render() {
-    return (
-      <Map
-        className="Map-Component"
-        google={this.props.google}
-        zoom={8}
-        style={mapStyles}
-        initialCenter={{ lat: 38, lng: -78 }}
-      >
-        {markers}
-      </Map>
-    );
-  }
-}
-export default GoogleApiWrapper({
-  apiKey: API_KEY,
-})(MapContainer);
+
+export default Map;
