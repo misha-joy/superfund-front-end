@@ -15,12 +15,12 @@ function App() {
     <div className="App">
       <nav>
         <ul className="Nav-Bar">
-          <li>health outcomes</li>
-          <li>environmental impact</li>
-          <li>take action</li>
-          <li>learn</li>
-          <li>epa database</li>
-          <li>about</li>
+          <li>Health Outcomes</li>
+          <li>Environmental Impact</li>
+          <li>Take Action</li>
+          <li>Learn</li>
+          <li>EPA Database</li>
+          <li>About</li>
         </ul>
       </nav>
       <h1>Site Title</h1>

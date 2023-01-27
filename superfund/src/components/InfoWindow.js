@@ -1,34 +1,37 @@
-import { InfoWindow as GoogleInfoWindow } from '@react-google-maps/api';
-import PropTypes from 'prop-types';
+import { InfoWindow as GoogleInfoWindow } from "@react-google-maps/api";
+import PropTypes from "prop-types";
 
 const InfoWindow = (props) => {
   const { selectedMarker, setSelectedMarker } = props;
   return (
     <GoogleInfoWindow
+      onCloseClick={() => {
+        setSelectedMarker(null);
+      }}
       position={{
-        lat: selectedMarker['LATITUDE'],
-        lng: selectedMarker['LONGITUDE'],
+        lat: selectedMarker["LATITUDE"],
+        lng: selectedMarker["LONGITUDE"],
       }}
     >
       <>
-        <h1>{selectedMarker['SITE_NAME']}</h1>
+        <h3>{selectedMarker["SITE_NAME"]}</h3>
         <p>
-          {selectedMarker['SITE_STRT_ADRS1'] +
-            ' ' +
-            selectedMarker['SITE_CITY_NAME'] +
-            ', ' +
-            selectedMarker['SITE_STATE'] +
-            ' ' +
-            selectedMarker['SITE_ZIP_CODE']}
+          {selectedMarker["SITE_STRT_ADRS1"] +
+            " " +
+            selectedMarker["SITE_CITY_NAME"] +
+            ", " +
+            selectedMarker["SITE_STATE"] +
+            " " +
+            selectedMarker["SITE_ZIP_CODE"]}
         </p>
-        <p>Status: {selectedMarker['NPL']}</p>
-        <button
+        <p>Status: {selectedMarker["NPL"]}</p>
+        {/* <button
           onClick={() => {
             setSelectedMarker(null);
           }}
         >
           Close
-        </button>
+        </button> */}
       </>
     </GoogleInfoWindow>
   );
