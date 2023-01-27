@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 // import Map1 from './components/Map1';
-import Map from './components/Map';
-import { useJsApiLoader } from '@react-google-maps/api';
-import { mapOptions } from './components/MapConfiguration';
+import Map from "./components/Map";
+import { useJsApiLoader } from "@react-google-maps/api";
+import { mapOptions } from "./components/MapConfiguration";
 // import locations from "./data/location.json";
-import './App.css';
+import "./App.css";
 
 function App() {
   const { isLoaded } = useJsApiLoader({
@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <nav>
-        {' '}
         <ul className="Nav-Bar">
           <li>health outcomes</li>
           <li>environmental impact</li>
@@ -31,5 +30,4 @@ function App() {
     </div>
   );
 }
-// test
 export default App;
