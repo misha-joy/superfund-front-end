@@ -2,13 +2,13 @@ import {
   GoogleMap,
   Marker as GoogleMarker,
   MarkerClusterer,
+  // StandaloneSearchBox,
 } from "@react-google-maps/api";
 import React from "react";
 import locations from "../data/location.json";
 import { useState } from "react";
 import CustomMarker from "../assets/Blue.png";
 import InfoWindow from "./InfoWindow";
-// import { MarkerClusterer } from "@googlemaps/markerclusterer";
 
 const Map = (props) => {
   const { isLoaded } = props;
@@ -23,8 +23,8 @@ const Map = (props) => {
   };
 
   const markers = locations;
-  // const markerCluster = new MarkerClusterer({ markers, Map });
 
+  // const onPlacesChanged = () => console.log(this.searchBox.getPlaces()); SEARCH BY ZIP?
   return (
     isLoaded && (
       <>
@@ -52,7 +52,6 @@ const Map = (props) => {
               </div>
             )}
           </MarkerClusterer>
-          {/* {markerCluster} */}
           {selectedMarker && (
             <InfoWindow
               selectedMarker={selectedMarker}
@@ -60,6 +59,12 @@ const Map = (props) => {
             />
           )}
         </GoogleMap>
+        {/* <StandaloneSearchBox
+          isLoaded={isLoaded}
+          onPlacesChanged={onPlacesChanged}
+        >
+          <input type="text" placeholder="Search by Zip Code" />
+        </StandaloneSearchBox> */}
       </>
     )
   );

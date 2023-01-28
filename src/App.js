@@ -2,7 +2,7 @@ import React from "react";
 // import Map1 from './components/Map1';
 import Map from "./components/Map";
 import { useJsApiLoader } from "@react-google-maps/api";
-import { mapOptions } from "./components/MapConfiguration";
+import { mapOptions } from "./MapConfiguration";
 // import locations from "./data/location.json";
 import "./App.css";
 
@@ -11,6 +11,7 @@ function App() {
     id: mapOptions.googleMapsApiKey,
     googleMapsApiKey: mapOptions.googleMapsApiKey,
   });
+
   return (
     <div className="App">
       <nav>
