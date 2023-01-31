@@ -6,11 +6,15 @@ import { mapOptions } from "./MapConfiguration";
 // import locations from "./data/location.json";
 import "./App.css";
 
+const libraries = ["places"];
 function App() {
-  const { isLoaded } = useJsApiLoader({
+  const { isLoaded, loadError } = useJsApiLoader({
     id: mapOptions.googleMapsApiKey,
     googleMapsApiKey: mapOptions.googleMapsApiKey,
+    libraries,
   });
+
+  if (loadError) return "Error Loading Map";
 
   return (
     <div className="App">

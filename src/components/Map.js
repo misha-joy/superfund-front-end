@@ -2,33 +2,49 @@ import {
   GoogleMap,
   Marker as GoogleMarker,
   MarkerClusterer,
-  // StandaloneSearchBox,
+  StandaloneSearchBox,
+  // LoadScript,
+  // ScriptLoaded,
 } from "@react-google-maps/api";
-import React from "react";
+import React, { useState } from "react";
 import locations from "../data/location.json";
-import { useState } from "react";
 import CustomMarker from "../assets/Blue.png";
 import InfoWindow from "./InfoWindow";
+import mapStyles from "../mapStyles";
+import SearchBox from "./SearchBox";
+// import Markers from "./Markers";
+// import usePlacesAutoComplete, {
+import { getGeocode, getLatLng } from "use-places-autocomplete";
+import "./Map.css";
 
 const Map = (props) => {
   const { isLoaded } = props;
   const [selectedMarker, setSelectedMarker] = useState(null);
+  const [mapCenter, setMapCenter] = useState({
+    lat: 39.833333,
+    lng: -98.583333,
+  });
   const containerStyle = {
     width: "75vh",
     height: "50vw",
   };
-  const center = {
-    lat: 39.833333,
-    lng: -98.583333,
-  };
+  const center = mapCenter;
 
   const markers = locations;
-
-  // const onPlacesChanged = () => console.log(this.searchBox.getPlaces()); SEARCH BY ZIP?
+  // const onClick = (ref) => (this.standaloneSearchBox = ref);
+  // const onPlacesChanged = () => console.log(this.searchBox.getPlaces());
   return (
     isLoaded && (
       <>
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={5}>
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={3}
+          options={{
+            styles: mapStyles,
+            // disableDefaultUI: true,
+          }}
+        >
           <MarkerClusterer>
             {(clusterer) => (
               <div>
@@ -59,12 +75,17 @@ const Map = (props) => {
             />
           )}
         </GoogleMap>
-        {/* <StandaloneSearchBox
-          isLoaded={isLoaded}
-          onPlacesChanged={onPlacesChanged}
+        <StandaloneSearchBox
+        // onClick={onClick}
+        // onPlacesChanged={onPlacesChanged}
         >
-          <input type="text" placeholder="Search by Zip Code" />
-        </StandaloneSearchBox> */}
+          <input
+            className="search-box"
+            type="text"
+            placeholder="Search by Address"
+          />
+        </StandaloneSearchBox>
+        <button className="search-button">Search</button>
       </>
     )
   );
