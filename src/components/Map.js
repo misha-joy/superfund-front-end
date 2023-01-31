@@ -18,7 +18,7 @@ import mapStyles from '../mapStyles';
 // import { getGeocode, getLatLng } from 'use-places-autocomplete';
 import './Map.css';
 
-const kBaseUrl = 'http://127.0.0.1:5000/superfunds';
+const kBaseUrl = 'https://superfund-back-end.herokuapp.com/superfunds';
 
 const getAllSuperfundsApi = () => {
   return axios
