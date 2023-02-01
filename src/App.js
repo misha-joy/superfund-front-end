@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react';
 // import Map1 from './components/Map1';
-import Map from "./components/Map";
-import { useJsApiLoader } from "@react-google-maps/api";
-import { mapOptions } from "./MapConfiguration";
+import Map from './components/Map';
+import Chart from './components/Chart';
+import { useJsApiLoader } from '@react-google-maps/api';
+import { mapOptions } from './MapConfiguration';
 // import locations from "./data/location.json";
-import "./App.css";
+import './App.css';
 
-const libraries = ["places"];
+const libraries = ['places'];
 function App() {
   const { isLoaded, loadError } = useJsApiLoader({
     id: mapOptions.googleMapsApiKey,
@@ -14,7 +15,7 @@ function App() {
     libraries,
   });
 
-  if (loadError) return "Error Loading Map";
+  if (loadError) return 'Error Loading Map';
 
   return (
     <div className="App">
@@ -31,6 +32,7 @@ function App() {
       <h1>Site Title</h1>
       <div className="Map-Container">
         <Map isLoaded={isLoaded} />
+        <Chart />
       </div>
     </div>
   );
