@@ -5,20 +5,20 @@ import {
   StandaloneSearchBox,
   // LoadScript,
   // ScriptLoaded,
-} from '@react-google-maps/api';
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+} from "@react-google-maps/api";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 // import locations from '../data/location.json';
-import CustomMarker from '../assets/Blue.png';
-import InfoWindow from './InfoWindow';
-import mapStyles from '../mapStyles';
+import CustomMarker from "../assets/Blue.png";
+import InfoWindow from "./InfoWindow";
+// import mapStyles from "../mapStyles";
 // import SearchBox from './SearchBox';
 // import Markers from "./Markers";
 // import usePlacesAutoComplete, {
 // import { getGeocode, getLatLng } from 'use-places-autocomplete';
-import './Map.css';
+import "./Map.css";
 
-const kBaseUrl = 'https://superfund-back-end.herokuapp.com/superfunds';
+const kBaseUrl = "https://superfund-back-end.herokuapp.com/superfunds";
 
 const getAllSuperfundsApi = () => {
   return axios
@@ -41,8 +41,8 @@ const Map = (props) => {
     lng: -98.583333,
   });
   const containerStyle = {
-    width: '75vh',
-    height: '50vw',
+    width: "2800px",
+    height: "800px",
   };
   const center = mapCenter;
   // const center = { lat: 39.833333, lng: -98.583333 };
@@ -76,30 +76,34 @@ const Map = (props) => {
           mapContainerStyle={containerStyle}
           center={center}
           zoom={3}
-          options={{
-            styles: mapStyles,
-            // disableDefaultUI: true,
-          }}
+          options={
+            {
+              // styles: mapStyles,
+              // disableDefaultUI: true,
+            }
+          }
         >
           <MarkerClusterer>
             {(clusterer) => (
               <div>
                 {markersData.map((marker) => {
                   return (
-                    <div key={marker['SITE_ID']}>
-                      <GoogleMarker
-                        clusterer={clusterer}
-                        position={{
-                          lat: marker['LATITUDE'],
-                          lng: marker['LONGITUDE'],
-                        }}
-                        options={{ icon: CustomMarker }}
-                        onClick={() => {
-                          setSelectedMarker(marker);
-                          setMapCenter(center);
-                        }}
-                      />
-                    </div>
+                    isLoaded && (
+                      <div key={marker["SITE_ID"]}>
+                        <GoogleMarker
+                          clusterer={clusterer}
+                          position={{
+                            lat: marker["LATITUDE"],
+                            lng: marker["LONGITUDE"],
+                          }}
+                          options={{ icon: CustomMarker }}
+                          onClick={() => {
+                            setSelectedMarker(marker);
+                            setMapCenter(center);
+                          }}
+                        />
+                      </div>
+                    )
                   );
                 })}
               </div>
@@ -112,7 +116,7 @@ const Map = (props) => {
             />
           )}
         </GoogleMap>
-        <StandaloneSearchBox
+        {/* <StandaloneSearchBox
         // onClick={onClick}
         // onPlacesChanged={onPlacesChanged}
         >
@@ -122,7 +126,7 @@ const Map = (props) => {
             placeholder="Search by Address"
           />
         </StandaloneSearchBox>
-        <button className="search-button">Search</button>
+        <button className="search-button">Search</button> */}
       </>
     )
   );
