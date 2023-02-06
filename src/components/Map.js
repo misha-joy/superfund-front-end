@@ -24,7 +24,9 @@ const getAllSuperfundsApi = () => {
   return axios
     .get(`${kBaseUrl}`)
     .then((response) => {
+      // const slice = response.data.slice(0, 10);
       // console.log(response.data);
+      // return slice;
       return response.data;
     })
     .catch((error) => {
@@ -53,14 +55,13 @@ const Map = (props) => {
   //   return data;
   // });
 
-  const getAllSuperfunds = () => {
-    return getAllSuperfundsApi()
-      .then((superfunds) => {
-        setMarkersData(superfunds);
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
+  const getAllSuperfunds = async () => {
+    try {
+      const superfunds = await getAllSuperfundsApi();
+      setMarkersData(superfunds);
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   useEffect(() => {
@@ -116,9 +117,10 @@ const Map = (props) => {
             />
           )}
         </GoogleMap>
-        {/* <StandaloneSearchBox
-        // onClick={onClick}
-        // onPlacesChanged={onPlacesChanged}
+        <StandaloneSearchBox
+          className="search-box"
+          // onClick={onClick}
+          // onPlacesChanged={onPlacesChanged}
         >
           <input
             className="search-box"
@@ -126,7 +128,7 @@ const Map = (props) => {
             placeholder="Search by Address"
           />
         </StandaloneSearchBox>
-        <button className="search-button">Search</button> */}
+        <button className="search-button">Search</button>
       </>
     )
   );

@@ -1,0 +1,12 @@
+.Nav-Bar {
+    width: 100%;
+    text-align: center;
+    display: inline;
+    padding: 1em;
+    list-style: none;
+    justify-content: space-around;
+} 
+
+.Nav-Bar:hover {
+    color: aqua;
+}
