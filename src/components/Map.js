@@ -12,7 +12,7 @@ import axios from "axios";
 import CustomMarker from "../assets/Blue.png";
 import InfoWindow from "./InfoWindow";
 // import mapStyles from "../mapStyles";
-// import SearchBox from './SearchBox';
+// import SearchBox from "./SearchBox";
 // import Markers from "./Markers";
 // import usePlacesAutoComplete, {
 // import { getGeocode, getLatLng } from 'use-places-autocomplete';
@@ -42,19 +42,22 @@ const Map = (props) => {
     lat: 39.833333,
     lng: -98.583333,
   });
+  const [zoom, setZoom] = useState(3);
   const containerStyle = {
     width: "2800px",
     height: "800px",
   };
   const center = mapCenter;
-  // const center = { lat: 39.833333, lng: -98.583333 };
+  const onLoad = (ref) => (window.searchBox = ref);
 
-  // const markers = getAllSuperfundsApi().then((data) => {
-  //   // console.log(data[0]['LATITUDE']);
-  //   // console.log(data);
-  //   return data;
-  // });
-
+  const onPlacesChanged = () => {
+    const [searchResult] = window.searchBox.getPlaces();
+    setMapCenter({
+      lat: searchResult.geometry.location.lat(),
+      lng: searchResult.geometry.location.lng(),
+    });
+    setZoom(10);
+  };
   const getAllSuperfunds = async () => {
     try {
       const superfunds = await getAllSuperfundsApi();
@@ -68,15 +71,13 @@ const Map = (props) => {
     getAllSuperfunds();
   }, []);
 
-  // const onClick = (ref) => (this.standaloneSearchBox = ref);
-  // const onPlacesChanged = () => console.log(this.searchBox.getPlaces());
   return (
     isLoaded && (
       <>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={3}
+          zoom={zoom}
           options={
             {
               // styles: mapStyles,
@@ -119,8 +120,8 @@ const Map = (props) => {
         </GoogleMap>
         <StandaloneSearchBox
           className="search-box"
-          // onClick={onClick}
-          // onPlacesChanged={onPlacesChanged}
+          onLoad={onLoad}
+          onPlacesChanged={onPlacesChanged}
         >
           <input
             className="search-box"
