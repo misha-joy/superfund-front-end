@@ -1,4 +1,4 @@
-.Nav-Bar {
+.nav-item {
     width: 100%;
     text-align: center;
     display: inline;
@@ -7,6 +7,6 @@
     justify-content: space-around;
 } 
 
-.Nav-Bar:hover {
+.nav-item:hover {
     color: aqua;
 }

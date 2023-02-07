@@ -3,12 +3,9 @@ import {
   Marker as GoogleMarker,
   MarkerClusterer,
   StandaloneSearchBox,
-  // LoadScript,
-  // ScriptLoaded,
 } from "@react-google-maps/api";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import locations from '../data/location.json';
 import CustomMarker from "../assets/Blue.png";
 import InfoWindow from "./InfoWindow";
 // import mapStyles from "../mapStyles";
@@ -24,9 +21,6 @@ const getAllSuperfundsApi = () => {
   return axios
     .get(`${kBaseUrl}`)
     .then((response) => {
-      // const slice = response.data.slice(0, 10);
-      // console.log(response.data);
-      // return slice;
       return response.data;
     })
     .catch((error) => {
@@ -44,14 +38,15 @@ const Map = (props) => {
   });
   const [zoom, setZoom] = useState(3);
   const containerStyle = {
-    width: "2800px",
-    height: "800px",
+    width: "800px",
+    height: "500px",
   };
   const center = mapCenter;
   const onLoad = (ref) => (window.searchBox = ref);
 
   const onPlacesChanged = () => {
     const [searchResult] = window.searchBox.getPlaces();
+    console.log(searchResult);
     setMapCenter({
       lat: searchResult.geometry.location.lat(),
       lng: searchResult.geometry.location.lng(),
@@ -129,7 +124,6 @@ const Map = (props) => {
             placeholder="Search by Address"
           />
         </StandaloneSearchBox>
-        <button className="search-button">Search</button>
       </>
     )
   );
