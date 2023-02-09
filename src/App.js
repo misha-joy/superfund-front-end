@@ -21,6 +21,10 @@ function createContent(informationTerm) {
           key={informationTerm.id}
           title={informationTerm.title}
           info={informationTerm.info}
+          linkURL={informationTerm.linkURL}
+          link={informationTerm.link}
+          image={informationTerm.image}
+          imageAlt={informationTerm.imageAlt}
         />
       </div>
     </div>
@@ -48,9 +52,6 @@ function App() {
       <div className="map-container">
         <div className="map-display">
           <Map isLoaded={isLoaded} />{" "}
-          <a className="epa-link" href="https://www.epa.gov/superfund">
-            What is a Superfund?
-          </a>
         </div>{" "}
         <div className="instructions-container">
           {" "}
