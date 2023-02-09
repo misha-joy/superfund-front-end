@@ -1,3 +1,9 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .dictionary {
     padding-left: 10em;
     
@@ -8,14 +14,18 @@
 
 }
 
+header {
+    /* background-image: url(./assets/HeaderImage.png);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+}
 html {
-    background-image: url(./assets/BackgroundImage2.png);
+    background-image: url(./assets/HeaderImage.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* height: 100%;
-    width: 100%; */
+    background-size: 100%;
+    aspect-ratio: auto;
+    font-family: Tahoma;
+   
 } 
 
 h1 {
@@ -44,9 +54,10 @@ h2 {
 
 .info-graphics {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     /* flex-wrap: wrap; */
-    flex-shrink: 3;
+    flex-shrink: 30;
 
 }
 
@@ -69,10 +80,6 @@ h2 {
     background-color: rgba(238, 238, 238, .6);
     border-radius: 3rem;
     padding:3em;
-    /* padding-top: 3em;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 3em; */
     height: auto;
     width: auto;
     max-width: 775px;
@@ -83,6 +90,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     padding: 3em;
+    resize: both;
 }
 
 .map-display {
@@ -94,6 +102,7 @@ h2 {
     padding-right: 3em;
     padding-bottom: 3em;
     width: min-content;
+    
 }
 
 .pie-container {

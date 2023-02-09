@@ -8,11 +8,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CustomMarker from "../assets/Blue.png";
 import InfoWindow from "./InfoWindow";
-// import mapStyles from "../mapStyles";
-// import SearchBox from "./SearchBox";
-// import Markers from "./Markers";
-// import usePlacesAutoComplete, {
-// import { getGeocode, getLatLng } from 'use-places-autocomplete';
 import "./Map.css";
 
 const kBaseUrl = "https://superfund-back-end.herokuapp.com/superfunds";
@@ -73,12 +68,6 @@ const Map = (props) => {
           mapContainerStyle={containerStyle}
           center={center}
           zoom={zoom}
-          options={
-            {
-              // styles: mapStyles,
-              // disableDefaultUI: true,
-            }
-          }
         >
           <MarkerClusterer>
             {(clusterer) => (

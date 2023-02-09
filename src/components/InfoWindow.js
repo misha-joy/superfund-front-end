@@ -25,14 +25,11 @@ const InfoWindow = (props) => {
             " " +
             selectedMarker["SITE_ZIP_CODE"]}
         </p>
+        <p>
+          Congressional District: {selectedMarker["SITE_STATE"]},{" "}
+          {selectedMarker["SITE_CONG_DISTRICT"]}
+        </p>
         <p>Status: {selectedMarker["NPL"]}</p>
-        {/* <button
-          onClick={() => {
-            setSelectedMarker(null);
-          }}
-        >
-          Close
-        </button> */}
       </>
     </GoogleInfoWindow>
   );

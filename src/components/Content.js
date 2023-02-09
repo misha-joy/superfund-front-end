@@ -7,7 +7,8 @@ const Content = (props) => {
       <h2>{props.title}</h2>
       <p className="paragraph-display">{props.info}</p>
       <a href={props.linkURL}>{props.link}</a>
-      <img src={props.image} alt={props.imageAlt} />
+      <img className="sf-photos" src={props.image1} alt={props.imageAlt1} />
+      <img className="sf-photos" src={props.image2} alt={props.imageAlt2} />
     </div>
   );
 };

@@ -1,12 +1,12 @@
-/* .nav-bar {
-    background-image: url(../assets/HeaderImage.png);
+.nav-bar {
+    /* background-image: url(../assets/HeaderImage.png);
     background-repeat: no-repeat;
-    background-size: cover; 
-    padding: 6em;
-} */
+    background-size: cover;  */
+    padding: 1em;
+}
 
 .nav-item {
-    text-align: center;
+    
     display: inline;
     padding: 1em;
     list-style: none;
@@ -15,15 +15,16 @@
 } 
 
 .nav-item:hover {
-    
-    text-decoration: underline rgb(184, 147, 181);
+    text-decoration: underline;
 }
 
 li {
+    text-align: center;
     /* margin-top: 15%; */
-    color: rgb(87, 87, 93);
+    color: rgb(56, 56, 62);
     display: inline;
     /* padding: 1em; */
     font-size: 23px;
     text-align: center;
 }
+

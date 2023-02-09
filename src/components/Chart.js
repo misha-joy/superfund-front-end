@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { RadialChart } from "react-vis";
+import { RadialChart, DiscreteColorLegend } from "react-vis";
 
 class Chart extends Component {
   render() {
@@ -27,6 +27,7 @@ class Chart extends Component {
             labelsRadiusMultiplier={0.92}
             labelsStyle={labelsStyle}
           />
+          {/* <DiscreteColorLegend title={myData} /> */}
         </div>
       </div>
     );

@@ -1,15 +1,16 @@
 import React from "react";
 import Map from "./components/Map";
 import Chart from "./components/Chart";
-// import BarGraph from "./components/BarGraph";
 import { useJsApiLoader } from "@react-google-maps/api";
 import { mapOptions } from "./MapConfiguration";
 import "./App.css";
 import NavBar from "./components/NavBar";
-// import FooterImage from "./assets/FooterImage.png";
+import FooterImage from "./assets/FooterImage.png";
+import HeaderImage from "./assets/HeaderImage.png";
 import Content from "./components/Content";
 import information from "./data/information.js";
 import LEGraph from "./assets/SuperfundLEGraph.png";
+import CongresSearchBox from "./components/CongressSearchBox";
 
 const libraries = ["places"];
 
@@ -23,8 +24,10 @@ function createContent(informationTerm) {
           info={informationTerm.info}
           linkURL={informationTerm.linkURL}
           link={informationTerm.link}
-          image={informationTerm.image}
-          imageAlt={informationTerm.imageAlt}
+          image1={informationTerm.image1}
+          imageAlt1={informationTerm.imageAlt1}
+          image2={informationTerm.image2}
+          imageAlt2={informationTerm.imageAlt2}
         />
       </div>
     </div>
@@ -41,22 +44,18 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        {/* <img
-          className="images"
-          src={HeaderImage}
-          alt="painting of a chemical plant on the shores of a lake"
-        ></img> */}
+        <NavBar />
         {/* <h1>Environmental Justice is Social Justice</h1> */}
       </header>
-      <NavBar />
+
       <div className="map-container">
-        <div className="map-display">
-          <Map isLoaded={isLoaded} />{" "}
-        </div>{" "}
         <div className="instructions-container">
           {" "}
           {information.slice(0, 2).map(createContent)}
         </div>
+        <div className="map-display">
+          <Map isLoaded={isLoaded} />{" "}
+        </div>{" "}
       </div>
       <div className="info-graphics">
         <div className="pie-container">
@@ -83,6 +82,7 @@ function App() {
         <dl className="dictionary">
           {information.slice(2, 8).map(createContent)}
         </dl>
+        {/* <CongresSearchBox /> */}
       </div>
       <footer>
         {" "}
@@ -95,11 +95,11 @@ function App() {
           <a href="https://adadevelopersacademy.org/">Ada Developers Academy</a>{" "}
           Cohort 18
         </p>
-        {/* <img
+        <img
           className="images"
           src={FooterImage}
           alt="painting of grass growing on the shore of a lake"
-        ></img> */}
+        ></img>
       </footer>
     </div>
   );
