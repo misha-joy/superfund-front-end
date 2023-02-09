@@ -56,7 +56,7 @@ const information = [
   {
     id: 7,
     title: "About",
-    info: "The idea behind this page was to create a project that spans across the divide between social and environmental justice. Too often these critical issues are looked at as seperate entities, while infact, one cannot exist without the other. Environmental justice and social justice are inextricablly linked.",
+    info: "The idea behind this page was to create a project that spans across the divide between social and environmental justice. Too often these critical issues are looked at as seperate entities, while infact, one cannot exist without the other. Environmental justice and social justice are inextricably linked.",
   },
 ];
 export default information;
