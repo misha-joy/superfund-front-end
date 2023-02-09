@@ -1,10 +1,22 @@
+.dictionary {
+    padding-left: 10em;
+    
+}
+
+.epa-link {
+    padding: 3em;
+
+}
+
 html {
     background-image: url(./assets/BackgroundImage2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* height: 100%;
     width: 100%; */
-}
+} 
 
 h1 {
     color: rgb(146, 146, 163);
@@ -15,54 +27,80 @@ h1:hover {
     color:rgb(8, 148, 41)
 }
 
-li {
-    /* margin-top: 15%; */
-    color: rgb(87, 87, 93);
-    display: inline;
-    /* padding: 1em; */
-    font-size: 27px;
-    text-align: center;
-}
-
-.Map-Container {
-    padding-left: 15%;
-    padding-right: 5%;
-    /* display: flex;
-    flex-direction: row; */
-    justify-content: space-between;
-    border-radius: 5rem;
-    width: 75%;
-}
-
-.Content  {
-    padding-left: 15%;
-    background-color: #eeeeeeff; opacity: .7;
-    color: rgb(0, 0, 0);
-    border-radius: 5rem;
-    border: solid, 5px, rgb(146, 146, 163);
-    width: 75%;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 3em;
-}
-
 h2 {
-    width: 100%;
-    text-align: center;
     color: rgb(146, 146, 163);
+    text-align: center;
+    width: 100%;
+    
+    
     /* background-color: rgb(239, 235, 243); */
 }
 
 .images {
-    width: 100%;
     height: 100%;
+    width: 100%;
+    
 }
 
-.dictionary {
-    padding-left: 10em;
+.info-graphics {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    flex-shrink: 3;
+
 }
 
-.Pie-Container {
+.instructions-container {
+    /* background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, .6);
+    border-radius: 3rem; */
+    padding: 3rem;
+    max-height: 750px;
+    max-width: 500px;
+}
+
+.le-graph {
+    height: 450px;
+    width: 725px;
+}
+
+.le-graph-container {
+    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, .6);
+    border-radius: 3rem;
+    padding:3em;
+    /* padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em; */
+    height: auto;
+    width: auto;
+    max-width: 775px;
+    max-height: 500px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.map-display {
+    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, .6); 
+    border-radius: 5rem;
     padding-top: 3em;
-    padding-left: 10em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    width: min-content;
+}
+
+.pie-container {
+    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, .6); 
+    border-radius: 3rem;
+    padding: 3em;
+    width: 775px;
+    height: 500px;
 }

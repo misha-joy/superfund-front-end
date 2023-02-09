@@ -9,12 +9,13 @@ import NavBar from "./components/NavBar";
 // import FooterImage from "./assets/FooterImage.png";
 import Content from "./components/Content";
 import information from "./data/information.js";
+import LEGraph from "./assets/SuperfundLEGraph.png";
 
 const libraries = ["places"];
 
 function createContent(informationTerm) {
   return (
-    <div className="Content">
+    <div className="content">
       <div id={informationTerm.id} className={informationTerm.title}>
         <Content
           key={informationTerm.id}
@@ -25,7 +26,6 @@ function createContent(informationTerm) {
     </div>
   );
 }
-
 function App() {
   const { isLoaded, loadError } = useJsApiLoader({
     id: mapOptions.googleMapsApiKey,
@@ -35,8 +35,8 @@ function App() {
   if (loadError) return "Error Loading Map";
 
   return (
-    <div className="App">
-      <header className="Header">
+    <div className="app">
+      <header className="header">
         {/* <img
           className="images"
           src={HeaderImage}
@@ -45,15 +45,43 @@ function App() {
         {/* <h1>Environmental Justice is Social Justice</h1> */}
       </header>
       <NavBar />
-      <h2>Superfund Finder</h2>
-      <div className="Map-Container">
-        <Map isLoaded={isLoaded} className="Map-Container" />
+      <div className="map-container">
+        <div className="map-display">
+          <Map isLoaded={isLoaded} />{" "}
+          <a className="epa-link" href="https://www.epa.gov/superfund">
+            What is a Superfund?
+          </a>
+        </div>{" "}
+        <div className="instructions-container">
+          {" "}
+          {information.slice(0, 2).map(createContent)}
+        </div>
       </div>
-      <div className="Pie-Container">
-        <Chart />
+      <div className="info-graphics">
+        <div className="pie-container">
+          <Chart />
+        </div>
+        <div className="le-graph-container">
+          <h2>
+            Effect of Superfund Sites Characteristics on Life Expectancy (LE).
+          </h2>
+          From:{" "}
+          <a href="https://www.nature.com/articles/s41467-021-22249-2">
+            The presence of Superfund sites as a derterminant of life expectancy
+            in the United States
+          </a>
+          <img
+            className="le-graph"
+            src={LEGraph}
+            alt="graph showing reduction in life expectancy due to living in proximity of superfund sites. Research suggests living near toxic waste sites reduces lifespans by an average of 1.2 years. "
+          />
+          <p></p>
+        </div>
       </div>
       <div>
-        <dl className="dictionary">{information.map(createContent)}</dl>
+        <dl className="dictionary">
+          {information.slice(2, 8).map(createContent)}
+        </dl>
       </div>
       <footer>
         {" "}

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { RadialChart } from "react-vis";
-import "./chart.css";
 
 class Chart extends Component {
   render() {
-    const labelsStyle = { fontSize: 8 };
+    const labelsStyle = { fontSize: 15 };
 
     const myData = [
       { label: "Below poverty line", angle: 15.4 },
@@ -14,16 +13,16 @@ class Chart extends Component {
       { label: "Other", angle: 12.1 },
     ];
     return (
-      <div className="Chart">
-        <div className="pie-chart-container">
+      <div className="chart">
+        <div>
           <h3>
             Proportion of Key Demographics Living Within 1 Mile of All Superfund
             Sites
           </h3>
           <RadialChart
             data={myData}
-            width={250}
-            height={250}
+            width={400}
+            height={400}
             showLabels={true}
             labelsRadiusMultiplier={0.92}
             labelsStyle={labelsStyle}

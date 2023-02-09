@@ -38,8 +38,8 @@ const Map = (props) => {
   });
   const [zoom, setZoom] = useState(3);
   const containerStyle = {
-    width: "800px",
-    height: "500px",
+    width: "1000px",
+    height: "800px",
   };
   const center = mapCenter;
   const onLoad = (ref) => (window.searchBox = ref);

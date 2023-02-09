@@ -1,12 +1,29 @@
+/* .nav-bar {
+    background-image: url(../assets/HeaderImage.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 6em;
+} */
+
 .nav-item {
-    width: 100%;
     text-align: center;
     display: inline;
     padding: 1em;
     list-style: none;
     justify-content: space-around;
+    text-shadow: 1ch;
 } 
 
 .nav-item:hover {
-    color: aqua;
+    
+    text-decoration: underline rgb(184, 147, 181);
+}
+
+li {
+    /* margin-top: 15%; */
+    color: rgb(87, 87, 93);
+    display: inline;
+    /* padding: 1em; */
+    font-size: 23px;
+    text-align: center;
 }

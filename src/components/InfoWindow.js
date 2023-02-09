@@ -5,6 +5,7 @@ const InfoWindow = (props) => {
   const { selectedMarker, setSelectedMarker } = props;
   return (
     <GoogleInfoWindow
+      className="info-window"
       onCloseClick={() => {
         setSelectedMarker(null);
       }}

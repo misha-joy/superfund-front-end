@@ -15,7 +15,7 @@ const NavBar = () => {
             to="What is  a Superfund"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={10}
             duration={500}
             onClick={closeMenu}
           >
