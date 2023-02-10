@@ -45,18 +45,17 @@ function App() {
     <div className="app">
       <header className="header">
         <NavBar />
-        {/* <h1>Environmental Justice is Social Justice</h1> */}
       </header>
-
+      <div className="what-is-a-superfund">
+        {" "}
+        {createContent(information[1])}
+      </div>
       <div className="map-container">
-        <div className="instructions-container">
-          {" "}
-          {information.slice(0, 2).map(createContent)}
-        </div>
         <div className="map-display">
           <Map isLoaded={isLoaded} />{" "}
-        </div>{" "}
+        </div>
       </div>
+      <div> {createContent(information[0])}</div>
       <div className="info-graphics">
         <div className="pie-container">
           <Chart />

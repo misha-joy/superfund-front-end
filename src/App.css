@@ -1,7 +1,18 @@
+#root {
+    background-image: url(./assets/BackgroundImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .dictionary {
@@ -12,29 +23,6 @@
 .epa-link {
     padding: 3em;
 
-}
-
-header {
-    /* background-image: url(./assets/HeaderImage.png);
-    background-size: 100%;
-    background-repeat: no-repeat; */
-}
-html {
-    background-image: url(./assets/HeaderImage.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    aspect-ratio: auto;
-    font-family: Tahoma;
-   
-} 
-
-h1 {
-    color: rgb(146, 146, 163);
-    text-align: center;
-}
-
-h1:hover {
-    color:rgb(8, 148, 41)
 }
 
 h2 {
@@ -61,16 +49,10 @@ h2 {
 
 }
 
-.instructions-container {
-    /* background-color: rgb(238, 238, 238);
-    background-color: rgba(238, 238, 238, .6);
-    border-radius: 3rem; */
-    padding: 3rem;
-    max-height: 750px;
-    max-width: 500px;
-}
-
 .le-graph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     height: 450px;
     width: 725px;
 }
@@ -87,8 +69,8 @@ h2 {
 }
 
 .map-container {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     padding: 3em;
     resize: both;
 }
@@ -112,4 +94,10 @@ h2 {
     padding: 3em;
     width: 775px;
     height: 500px;
+}
+#what-is-a-superfund {
+    display: flex;
+    justify-content: right;
+    padding: 15em;
+
 }
