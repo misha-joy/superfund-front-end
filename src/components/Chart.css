@@ -7,3 +7,17 @@ h2 {
     width: 100%;
 
 }
+
+@media (max-width: 1200px) {
+    .chart {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .chart {
+        width: 350px;
+        height: 350px;
+    }
+}

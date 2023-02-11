@@ -25,3 +25,25 @@
     width: 500px;
     height: 350px;
 }
+
+@media (max-width: 1200px) {
+    .paragraph-display {
+        font-size: 15px;
+    }
+    .links {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .paragraph-display {
+        font-size: 10px;
+    }
+    .links {
+        font-size: 10px;
+    }
+    .sf-photos {
+        width: 350px;
+        height: 200px;
+    }
+}

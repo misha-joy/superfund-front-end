@@ -3,7 +3,7 @@
     background-attachment: fixed;
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* max-width: 1000px;
     min-width:1000px;
     min-height: 800px;
@@ -77,10 +77,10 @@ h2 {
     background-color: rgba(238, 238, 238, .6);
     border-radius: 3rem;
     padding: 3em;
-    height: 5uto;
+    height: auto;
     width: auto;
     white-space: pre-wrap;
-    margin-left: 80px; 
+    margin-left: 145px; 
     /* max-width: 775px;
     max-height: 500px; */
 }
@@ -136,4 +136,30 @@ h2 {
     justify-content: right;
     padding: 3em;
     margin-left: 80px;
+}
+
+@media (max-width: 1200px) {
+    .bar-graph-container {
+        width: 600px;
+        height: 450px;
+        padding: 1em;
+    }
+    .dictionary {
+        max-width: 600px;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bar-graph-container {
+        width: 500px;
+        height: 450px;
+        /* padding-right: 10em; */
+    }
+    .dictionary {
+        max-width: 500px;
+        padding-right: 10em;
+        
+    }
 }

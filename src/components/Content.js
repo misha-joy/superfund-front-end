@@ -1,12 +1,14 @@
-import React from "react";
-import "./Content.css";
+import React from 'react';
+import './Content.css';
 
 const Content = (props) => {
   return (
     <div className="entry">
       <h2>{props.title}</h2>
       <p className="paragraph-display">{props.info}</p>
-      <a href={props.linkURL}>{props.link}</a>
+      <a className="links" href={props.linkURL}>
+        {props.link}
+      </a>
       {props.image1 && (
         <img className="sf-photos" src={props.image1} alt={props.imageAlt1} />
       )}
