@@ -5,12 +5,10 @@ import { useJsApiLoader } from "@react-google-maps/api";
 import { mapOptions } from "./MapConfiguration";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import FooterImage from "./assets/FooterImage.png";
-import HeaderImage from "./assets/HeaderImage.png";
 import Content from "./components/Content";
 import information from "./data/information.js";
-import LEGraph from "./assets/SuperfundLEGraph.png";
 import CongresSearchBox from "./components/CongressSearchBox";
+import About from "./components/About";
 
 const libraries = ["places"];
 
@@ -46,36 +44,15 @@ function App() {
       <header className="header">
         <NavBar />
       </header>
-      <div className="what-is-a-superfund">
-        {" "}
-        {createContent(information[1])}
-      </div>
+      <div id="map-content"> {createContent(information[1])}</div>
       <div className="map-container">
         <div className="map-display">
           <Map isLoaded={isLoaded} />{" "}
         </div>
       </div>
-      <div> {createContent(information[0])}</div>
-      <div className="info-graphics">
-        <div className="pie-container">
-          <Chart />
-        </div>
-        <div className="le-graph-container">
-          <h2>
-            Effect of Superfund Sites Characteristics on Life Expectancy (LE).
-          </h2>
-          From:{" "}
-          <a href="https://www.nature.com/articles/s41467-021-22249-2">
-            The presence of Superfund sites as a derterminant of life expectancy
-            in the United States
-          </a>
-          <img
-            className="le-graph"
-            src={LEGraph}
-            alt="graph showing reduction in life expectancy due to living in proximity of superfund sites. Research suggests living near toxic waste sites reduces lifespans by an average of 1.2 years. "
-          />
-          <p></p>
-        </div>
+      <div id="map-content"> {createContent(information[0])}</div>
+      <div className="bar-graph-container">
+        <Chart />
       </div>
       <div>
         <dl className="dictionary">
@@ -84,7 +61,9 @@ function App() {
         {/* <CongresSearchBox /> */}
       </div>
       <footer>
-        {" "}
+        <About className="about" />
+
+        {/* {" "}
         <p className="credits">
           {" "}
           Created by{" "}
@@ -93,12 +72,7 @@ function App() {
           part of{" "}
           <a href="https://adadevelopersacademy.org/">Ada Developers Academy</a>{" "}
           Cohort 18
-        </p>
-        <img
-          className="images"
-          src={FooterImage}
-          alt="painting of grass growing on the shore of a lake"
-        ></img>
+        </p> */}
       </footer>
     </div>
   );

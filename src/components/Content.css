@@ -7,8 +7,6 @@
     padding-right: 3em;
     padding-bottom: 1em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    max-width: 75%;
-    min-width: 15%;
 }
 
 .paragraph-display {
@@ -17,10 +15,13 @@
 }
 
 .sf-photos {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
     padding: 1em;
-    border-radius: 4em;
+    padding-bottom: 3em;
+    /* border-radius: 4em; */
     opacity: .8;
+    width: 500px;
+    height: 350px;
 }

@@ -1,18 +1,57 @@
 #root {
     background-image: url(./assets/BackgroundImage.png);
+    background-attachment: fixed;
+    background-position: center; 
     background-repeat: no-repeat;
     background-size: contain;
-    max-width: 1600px;
+    /* max-width: 1000px;
+    min-width:1000px;
+    min-height: 800px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 
 }
 
+.about {
+    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, .8); 
+    color: rgb(0, 0, 0);
+    border-radius: 3rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.about-section {
+    margin-left: 80px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.about-creators {
+    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, .8); 
+    color: rgb(0, 0, 0);
+    margin-left: 80px;
+    border-radius: 3rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
 .app {
-    max-width: 1400px;
+    max-width: 1000px;
+    min-width:1000px;
+    min-height: auto;
     margin-left: auto;
     margin-right: auto;
-
+    /* max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 .dictionary {
@@ -33,45 +72,23 @@ h2 {
     
     /* background-color: rgb(239, 235, 243); */
 }
-
-.images {
-    height: 100%;
-    width: 100%;
-    
-}
-
-.info-graphics {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
-    flex-shrink: 30;
-
-}
-
-.le-graph {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 450px;
-    width: 725px;
-}
-
-.le-graph-container {
+.bar-graph-container {
     background-color: rgb(238, 238, 238);
     background-color: rgba(238, 238, 238, .6);
     border-radius: 3rem;
-    padding:3em;
-    height: auto;
+    padding: 3em;
+    height: 5uto;
     width: auto;
-    max-width: 775px;
-    max-height: 500px;
+    white-space: pre-wrap;
+    margin-left: 80px; 
+    /* max-width: 775px;
+    max-height: 500px; */
 }
 
 .map-container {
-    /* display: flex;
-    justify-content: space-around; */
-    padding: 3em;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
     resize: both;
 }
 
@@ -84,20 +101,39 @@ h2 {
     padding-right: 3em;
     padding-bottom: 3em;
     width: min-content;
+    max-width: 800px;
+    margin-left: 80px;
     
 }
 
-.pie-container {
+/* .pie-container {
     background-color: rgb(238, 238, 238);
     background-color: rgba(238, 238, 238, .6); 
     border-radius: 3rem;
     padding: 3em;
     width: 775px;
-    height: 500px;
+    height: 500px; 
+}*/
+
+.profile-pictures {
+    width: 100%;
+    transform:scale(1.4);
+    margin-top:12px;
 }
-#what-is-a-superfund {
+
+.profile-pictures--mask {
+    display: inline-flex;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    overflow:hidden;
+    box-shadow: 0 8px 16px rgb(0,0,0);
+    margin-bottom: 28px;
+}
+
+#map-content {
     display: flex;
     justify-content: right;
-    padding: 15em;
-
+    padding: 3em;
+    margin-left: 80px;
 }

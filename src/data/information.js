@@ -23,11 +23,25 @@ const information = [
       "https://www.epa.gov/sites/default/files/2015-09/documents/webpopulationrsuperfundsites9.28.15.pdf",
     link: "Population Surrounding 1,857 Superfund Remedial Sites, September 2020",
   },
+  {
+    id: 11,
+    title: "",
+    info: "Effect of Superfund Sites Characteristics on Life Expectancy (LE)",
+    linkURL: "https://www.nature.com/articles/s41467-021-22249-2",
+    link: "The presence of Superfund sites as a derterminant of life expectancy in the United States",
+    image1:
+      "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-021-22249-2/MediaObjects/41467_2021_22249_Fig4_HTML.png?as=webp",
+    imageAlt1:
+      "graph showing reduction in life expectancy due to living in proximity of superfund sites. Research suggests living near toxic waste sites reduces lifespans by an average of 1.2 years. ",
+  },
 
   {
     id: 3,
     title: "Environmental Impact",
     info: "Hazardous substances have devistating impacts on the environment, causing harm to microrganisms, animals, and plants and greatly affecting the local ecosystem. Superfund sites in areas prone to flooding pose an even greater risk, as floodwaters can spread localized toxins and contaminate waterways that provide drinking water to humans and wildlife. Severe storms and flooding fueled by climate change will continue to exacerbate contamination and hinder the cleanup of superfund sites across areas that have not typically experienced historic flooding.",
+    linkURL:
+      "https://web.archive.org/web/20220713075658/https://fortune.com/2018/10/30/aerial-photos-superfund-sites-usa/",
+    link: "Aerial Photos of the Worst Hazardous Waste Sites in the U.S. (taken 1985-1986)",
     image1:
       "https://web.archive.org/web/20230209145411im_/https://content.fortune.com/wp-content/uploads/2018/10/wasteland62.jpg?resize=578,385",
     imageAlt1:
@@ -36,11 +50,7 @@ const information = [
       "https://web.archive.org/web/20230209212640im_/https://content.fortune.com/wp-content/uploads/2018/10/new-jersey-14.jpg?resize=578,385",
     imageAlt2: "arial photograph of a superfund site in New Jersey",
   },
-  {
-    id: 4,
-    title: "EPA Database",
-    info: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo in vitae turpis massa. Consectetur libero id faucibus nisl. Suspendisse ultrices gravida dictum fusce. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Sollicitudin aliquam ultrices sagittis orci. Vestibulum lectus mauris ultrices eros in. Ullamcorper eget nulla facilisi etiam dignissim. Bibendum enim facilisis gravida neque convallis. Tristique sollicitudin nibh sit amet. Vel orci porta non pulvinar. Neque ornare aenean euismod elementum nisi quis eleifend quam. Ultrices vitae auctor eu augue ut lectus arcu. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Amet consectetur adipiscing elit pellentesque habitant morbi. Arcu non odio euismod lacinia at. Augue eget arcu dictum varius duis at consectetur lorem. Semper viverra nam libero justo laoreet sit amet. Porttitor lacus luctus accumsan tortor. Dui accumsan sit amet nulla facilisi. Nibh nisl condimentum id venenatis a condimentum vitae. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Vivamus arcu felis bibendum ut tristique et egestas quis. Aliquam id diam maecenas ultricies mi eget mauris pharetra. Tristique senectus et netus et malesuada fames ac. Sed blandit libero volutpat sed cras. Nunc non blandit massa enim nec dui nunc mattis enim. Urna duis convallis convallis tellus id interdum velit laoreet. Quam vulputate dignissim suspendisse in est ante in nibh. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Urna porttitor rhoncus dolor purus non enim. Et tortor consequat id porta nibh venenatis. Massa tincidunt dui ut ornare lectus sit amet est. Diam donec adipiscing tristique risus nec. Congue nisi vitae suscipit tellus mauris a. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Orci porta non pulvinar neque. Quam pellentesque nec nam aliquam sem. Vel pretium lectus quam id leo. Diam maecenas sed enim ut sem viverra aliquet eget. Aliquet sagittis id consectetur purus. Nulla facilisi etiam dignissim diam quis. Orci dapibus ultrices in iaculis. Et pharetra pharetra massa massa ultricies mi. Habitasse platea dictumst vestibulum rhoncus est. Elit sed vulputate mi sit amet mauris. Ut ornare lectus sit amet est placerat in. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Ac feugiat sed lectus vestibulum. Egestas sed tempus urna et pharetra pharetra. Metus aliquam eleifend mi in nulla. Nam libero justo laoreet sit amet cursus sit amet. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Sed faucibus turpis in eu mi bibendum neque egestas congue. Et leo duis ut diam quam nulla porttitor. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Consequat ac felis donec et. Diam quam nulla porttitor massa id. Est lorem ipsum dolor sit amet consectetur. Volutpat blandit aliquam etiam erat velit scelerisque in dictum. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Ut morbi tincidunt augue interdum velit. Id aliquet risus feugiat in ante metus dictum. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Leo integer malesuada nunc vel risus commodo viverra maecenas. Est ante in nibh mauris cursus. Nunc pulvinar sapien et ligula ullamcorper. Et netus et malesuada fames ac. Eget aliquet nibh praesent tristique magna. Lobortis mattis aliquam faucibus purus in massa. Diam sollicitudin tempor id eu nisl. Fermentum posuere urna nec tincidunt. Gravida cum sociis natoque penatibus. Nunc sed augue lacus viverra vitae congue eu. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Dolor magna eget est lorem ipsum.",
-  },
+
   {
     id: 5,
     title: "Learn More",
@@ -58,6 +68,5 @@ const information = [
     title: "About",
     info: "The idea behind this page was to create a project that spans across the divide between social and environmental justice. Too often these critical issues are looked at as seperate entities, while infact, one cannot exist without the other. Environmental justice and social justice are inextricably linked.",
   },
-  { id: 10, title: "New Nav Item" },
 ];
 export default information;
