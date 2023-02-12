@@ -62,17 +62,6 @@ function App() {
       </div>
       <footer>
         <About className="about" />
-
-        {/* {" "}
-        <p className="credits">
-          {" "}
-          Created by{" "}
-          <a href="https://www.linkedin.com/in/reyna-diaz/"> Reyna</a> &
-          <a href="https://www.linkedin.com/in/misha-craddock/"> Misha </a>,
-          part of{" "}
-          <a href="https://adadevelopersacademy.org/">Ada Developers Academy</a>{" "}
-          Cohort 18
-        </p> */}
       </footer>
     </div>
   );

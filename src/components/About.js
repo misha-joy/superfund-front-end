@@ -19,14 +19,18 @@ const About = () => {
             alt="Misha"
           />
         </div>
-        <a href="https://www.linkedin.com/in/reyna-diaz/">Reyna</a>
-        <p>and</p>
-        <a href="https://www.linkedin.com/in/misha-craddock/">Misha </a>
-        <p>
-          part of{" "}
-          <a href="https://adadevelopersacademy.org/">Ada Developers Academy</a>{" "}
-          Cohort 18
-        </p>
+        <div>
+          <p>
+            <a href="https://www.linkedin.com/in/reyna-diaz/">Reyna </a> and{" "}
+            <a href="https://www.linkedin.com/in/misha-craddock/">Misha</a>
+          </p>
+          <p>
+            <a href="https://adadevelopersacademy.org/">
+              Ada Developers Academy
+            </a>{" "}
+            Cohort 18
+          </p>
+        </div>
       </div>
     </div>
   );
