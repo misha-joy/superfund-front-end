@@ -1,12 +1,8 @@
 .nav-bar {
-    /* background-image: url(../assets/HeaderImage.png);
-    background-repeat: no-repeat;
-    background-size: cover;  */
-    padding: 4px;
+    
 }
 
 .nav-item {
-    
     display: inline;
     padding: 1em;
     list-style: none;
@@ -15,6 +11,7 @@
 
 .nav-item:hover {
     text-decoration: underline;
+    /* color: rgb(157, 139, 157) */
 }
 
 li {

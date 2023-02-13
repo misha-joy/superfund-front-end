@@ -39,9 +39,8 @@ const information = [
     id: 3,
     title: "Environmental Impact",
     info: "Hazardous substances have devistating impacts on the environment, causing harm to microrganisms, animals, and plants and greatly affecting the local ecosystem. Superfund sites in areas prone to flooding pose an even greater risk, as floodwaters can spread localized toxins and contaminate waterways that provide drinking water to humans and wildlife. Severe storms and flooding fueled by climate change will continue to exacerbate contamination and hinder the cleanup of superfund sites across areas that have not typically experienced historic flooding.",
-    linkURL:
-      "https://web.archive.org/web/20220713075658/https://fortune.com/2018/10/30/aerial-photos-superfund-sites-usa/",
-    link: "Aerial Photos of the Worst Hazardous Waste Sites in the U.S. (taken 1985-1986)",
+    linkURL: "https://www.nbcnews.com/specials/superfund-sites-climate-change/",
+    link: "A growing toxic threat -made worse by climage change",
     image1:
       "https://web.archive.org/web/20230209145411im_/https://content.fortune.com/wp-content/uploads/2018/10/wasteland62.jpg?resize=578,385",
     imageAlt1:
