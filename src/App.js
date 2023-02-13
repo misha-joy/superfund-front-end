@@ -44,13 +44,13 @@ function App() {
       <header className="header">
         <NavBar />
       </header>
-      <div id="map-content"> {createContent(information[1])}</div>
+      <div id="map-content"> {createContent(information[0])}</div>
       <div className="map-container">
         <div className="map-display">
           <Map isLoaded={isLoaded} />{" "}
         </div>
       </div>
-      <div id="map-content"> {createContent(information[0])}</div>
+      <div id="map-content"> {createContent(information[1])}</div>
       <div className="bar-graph-container">
         <Chart />
       </div>

@@ -23,8 +23,7 @@ const About = () => {
           <p>
             <a href="https://www.linkedin.com/in/reyna-diaz/">Reyna </a> and{" "}
             <a href="https://www.linkedin.com/in/misha-craddock/">Misha</a>
-          </p>
-          <p>
+            {"   "}
             <a href="https://adadevelopersacademy.org/">
               Ada Developers Academy
             </a>{" "}

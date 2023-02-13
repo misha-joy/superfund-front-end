@@ -2,23 +2,23 @@
 
 const information = [
   {
-    id: 0,
-    title: "Use the Map to See Superfund Sites Near You",
-    info: "Superfund Site Names are listed along with the street/aproxmiate address.\n\nAlso listed is the site status on the National Priorities List or 'NPL'.",
-    linkURL: "https://www.epa.gov/superfund/npl-site-status",
-    link: "Current NPL Information",
-  },
-  {
     id: 1,
     title: "What is a Superfund?",
-    info: "The Comprehensive Environmental Response, Compensation and Liability Act (CERCLA), also known as Superfund, was established by the US Congress in 1980 in response to poorly managed toxic waste sites posing risks to human health and the environment.\n\nSuperfund gives the Environmental Protection Agency (EPA) the authority and funds to clean up contaminated sites when there is no viable responsible party. The cleanup process includes a preliminary assessment, a National Priorities List (NPL) of the worst sites, a remedial investigation/feasibility study, remedial design/action, and post-construction monitoring.The process ends with the site being deleted from the NPL once it is deemed safe.",
+    info: "The Comprehensive Environmental Response, Compensation and Liability Act (CERCLA), also known as Superfund, was established by the US Congress in 1980 in response to poorly managed toxic waste sites posing risks to human health and the environment.\n\nSuperfund gives the Environmental Protection Agency (EPA) the authority and funds to clean up contaminated sites when there is no viable responsible party. The cleanup process includes a preliminary assessment, a National Priorities List (NPL) of the worst sites, a remedial investigation/feasibility study, remedial design/action, and post-construction monitoring.The process ends with the site being deleted from the NPL once it is deemed safe.\n\nUse the map below to find sites, check the status of the site on the NPL, the congressional district in which the site resides and the street/approximate address of the site.",
     linkURL: "https://www.epa.gov/superfund",
     link: "What is a Superfund?",
   },
   {
+    id: 0,
+    title: "Something Else Here",
+    info: "Why is this one so small, also the margins are wrong!! Superfund Site Names are listed along with the street/aproxmiate address.\n\nAlso listed is the site status on the National Priorities List or 'NPL'.",
+    linkURL: "https://www.epa.gov/superfund/npl-site-status",
+    link: "Current NPL Information",
+  },
+  {
     id: 2,
     title: "Health Outcomes",
-    info: "According to the EPA, thousands of contaminated sites exist nationally due to hazardous waste being dumped, left out in the open, or otherwise improperly managed. These sites include manufacturing facilities, processing plants, landfills and mining sites.\n\n1 in 6 Americans lives within a 3 mile radius of a toxic waste site.\n\nAproximately 21 million people live with in 1 mile of a Superfund (~6% of the U.S. population).\n\nThe cleanup of hazardous waste sites is often arduous and lengthy, leaving nearby communities to grapple with extended exposure to toxins and the resulting serious environmental and health consequences.\n\nAccording to the EPA, hazardous substances found in and around superfund sites may irritate the skin or eyes, make it difficult to breathe, cause headaches and nausea, or result in other types of illness. Some hazardous substances can cause far more severe health effects, including:\n\n-behavioral abnormalities,\n\n-cancer,\n\n-genetic mutations,\n\n-physiological malfunctions (e.g., reproductive impairment, kidney failure, etc.),\n\n-physical deformations, and\n\n-birth defects.\n\n\n\nThe health impacts of toxic waste sites have cascading effects on family finances and the US Department of Housing and Urban Development (HUD) owns, operates, or subsidizes 18,158 properties located within one mile of Superfund sites, with the majority of HUD tenants being households of color.\n\nBlack Americans are 75% more likely to live within close proximity to a toxic waste producing facility than an American of another race.\n\n",
+    info: "According to the EPA, thousands of contaminated sites exist nationally due to hazardous waste being dumped, left out in the open, or otherwise improperly managed. These sites include manufacturing facilities, processing plants, landfills and mining sites.\n\n1 in 6 Americans lives within a 3 mile radius of a toxic waste site.\n\nAproximately 21 million people live with in 1 mile of a Superfund (~6% of the U.S. population).\n\nThe cleanup of hazardous waste sites is often arduous and lengthy, leaving nearby communities to grapple with extended exposure to toxins and the resulting serious environmental and health consequences.\n\nAccording to the EPA, hazardous substances found in and around superfund sites may irritate the skin or eyes, make it difficult to breathe, cause headaches and nausea, or result in other types of illness. Some hazardous substances can cause far more severe health effects, including:\n\n    ◦ behavioral abnormalities,\n\n    ◦ cancer,\n\n    ◦ genetic mutations,\n\n    ◦ physiological malfunctions (e.g., reproductive impairment, kidney failure, etc.),\n\n    ◦ physical deformations, and\n\n    ◦ birth defects.\n\n\n\nThe health impacts of toxic waste sites have cascading effects on family finances and the US Department of Housing and Urban Development (HUD) owns, operates, or subsidizes 18,158 properties located within one mile of Superfund sites, with the majority of HUD tenants being households of color.\n\nBlack Americans are 75% more likely to live within close proximity to a toxic waste producing facility than an American of another race.\n\n",
     linkURL:
       "https://www.epa.gov/sites/default/files/2015-09/documents/webpopulationrsuperfundsites9.28.15.pdf",
     link: "Population Surrounding 1,857 Superfund Remedial Sites, September 2020",

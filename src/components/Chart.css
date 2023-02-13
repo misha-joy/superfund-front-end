@@ -1,18 +1,29 @@
-/* .chart {
-    padding: 3em;
-} */
+.lables  {
+    font-size: 15px;
+    /* white-space: pre-wrap; */
+}
 h2 {
     color: rgb(146, 146, 163);
     text-align: center;
     width: 100%;
 
 }
-
+.key {
+    font-size: 10 px;
+}
 @media (max-width: 1200px) {
     .chart {
-        width: 500px;
-        height: 350px;
+        width: 400px;
+        height: 250px;
     }
+    .graph-lables  {
+        width: 400px;
+        /* height: 0px; */
+        margin-left: 15px;
+    }
+    .lables  {
+        font-size: 10px;
+}
 }
 
 @media (max-width: 768px) {
