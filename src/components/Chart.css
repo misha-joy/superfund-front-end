@@ -1,7 +1,9 @@
 .lables  {
     font-size: 15px;
 }
-
+.chart {
+    opacity: .7;
+}
 h2 {
     color: rgb(146, 146, 163);
     text-align: center;
@@ -39,6 +41,6 @@ ul li {
     .key {
         font-size: 6 px;
         width: 250px;
-        padding-left: 3em;
+        padding-left: 1em;
     }
 }

@@ -18,7 +18,7 @@
     padding-left: 3em;
     padding-right: 3em;
     padding-bottom: 1em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
 }
 
 .about-section {
@@ -39,7 +39,7 @@
     padding-right: 3em;
     padding-bottom: 1em;
     width: 500px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+   
 }
 
 .app {
@@ -48,6 +48,15 @@
     min-height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+.congress-search-box {
+    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, .8); 
+    border-radius: 3rem;
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-bottom: 1em;
 }
 
 .dictionary {
@@ -163,7 +172,7 @@ h2 {
     }
     .bar-graph-container {
         width: 465px;
-        height: 525px;
+        height: 600px;
     }
 
     .creator-title {
@@ -190,7 +199,7 @@ h2 {
         width: 300px;
     }
     .bar-graph-container {
-        height: 500px;
+        height: 600px;
         margin-left: 75px;
         width: 375px;
     }
@@ -220,7 +229,7 @@ h2 {
     }
     .bar-graph-container {
         width: 275px;
-        height: 475px;
+        height: 575px;
     }
     .credits {
         font-size: 13px;

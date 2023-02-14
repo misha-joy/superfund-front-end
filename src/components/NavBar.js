@@ -25,7 +25,8 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <ul className={click ? "nav-menu-active" : "nav-menu"}>
-        {information.slice(2).map(createNavItem)}
+        {createNavItem(information[2])}
+        {information.slice(4, 8).map(createNavItem)}
       </ul>
     </nav>
   );

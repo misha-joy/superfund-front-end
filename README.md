@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+## SUPERFUND LOCATOR 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Use this app to find Superfund Sites near you, learn about health risks associated with living near superfund sites, and environmental impacts of toxic waste facilities. 
+This app was created as a capstone project for [Ada Developers Academy](https://adadevelopersacademy.org/) 
 
-## Available Scripts
+## Project Description: 
 
-In the project directory, you can run:
+Our app allows users to search for Superfund Sites on our map where they can search by address, get the name of the site, the status of the site's listing on the National Priorities List, as well as the congressional district where the site resides. Users can also read about health and environmental impacts of superfund sites and have access to many external links for further information. 
 
-### `yarn start`
+Technologies used in this app are the Google Maps API in React, react-vis to visually display data, and a Flask backend connected to a PSQL database.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How To Install and Run this Project:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install this project using:
+**npm install** 
+or
+**yarn add** 
+the following dependencies: 
+@googlemaps/markerclusterer: "^2.0.15",
+@testing-library/jest-dom: "^5.14.1",
+@testing-library/react: "^13.0.0",
+@testing-library/user-event: "^13.2.1",
+axios: "^1.3.0",
+react: "^18.2.0",
+react-dom: "^18.2.0",
+@react-google-maps/api,
+react-scripts: "5.0.1",
+react-scroll: "^1.8.9",
+react-vis: "^1.11.12",
+use-places-autocomplete: "^4.0.0",
+web-vitals: "^2.1.0"
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create your own Google Maps API Key by following the instructions provided by Google [here](https://developers.google.com/maps). 
 
-### `yarn build`
+Create a .env.local file and store your Google Maps API Key as follows:
+REACT_APP_GOOGLE_MAPS_API_KEY=<"YOUR_API_KEY">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run the react app using:
+**npm start**
+or
+**yarn start**
