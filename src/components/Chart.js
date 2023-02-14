@@ -1,22 +1,22 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   VerticalBarSeries,
   XYPlot,
   XAxis,
   YAxis,
   LabelSeries,
-} from "react-vis";
-import "./Chart.css";
+} from 'react-vis';
+import './Chart.css';
 // import BelowPovertyLine from ".assets/lables/BelowPovertyLabel.png";
 
 class Chart extends Component {
   render() {
     const data = [
-      { x: "A", y: 15.4 },
-      { x: "B", y: 49.8 },
-      { x: "C", y: 7.8 },
-      { x: "D", y: 14.9 },
-      { x: "E", y: 12.1 },
+      { x: 'A', y: 15.4 },
+      { x: 'B', y: 49.8 },
+      { x: 'C', y: 7.8 },
+      { x: 'D', y: 14.9 },
+      { x: 'E', y: 12.1 },
     ];
     const chartWidth = 500;
     const chartHeight = 350;
@@ -27,8 +27,9 @@ class Chart extends Component {
           Percentage of Key Demographics Living Within 1 Mile of All Superfund
           Sites
         </h2>
-        <div className="chart">
+        <div>
           <XYPlot
+            className="chart"
             xType="ordinal"
             width={chartWidth}
             height={chartHeight}
@@ -45,11 +46,13 @@ class Chart extends Component {
               labelAnchorX="start"
               labelAnchorY="text-after-edge"
             />
-            <p>
-              {" "}
-              A : "Below poverty line" B: "Non-White" C: Linguistically Isolated
-              D: Less Than Highschool Education E: Other{" "}
-            </p>
+            <ul className="key">
+              <li>A : Below poverty line</li>
+              <li>B: Non-White</li>
+              <li>C: Linguistically Isolated</li>
+              <li>D: Less Than Highschool Education</li>
+              <li>E: Other</li>
+            </ul>
           </XYPlot>
         </div>
       </div>

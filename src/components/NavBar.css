@@ -1,5 +1,6 @@
 .nav-bar {
-    padding: 1px;
+    padding-top: 1px;
+    padding-left: 6em;
 }
 
 .nav-item {
@@ -15,7 +16,6 @@
 }
 
 li {
-    text-align: center;
     /* margin-top: 15%; */
     color: rgb(56, 56, 62);
     display: inline;
@@ -24,3 +24,38 @@ li {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .nav-item {
+        padding: 1em;
+    }
+    ul li{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 665px) {
+    .nav-bar {
+        padding: 0em;
+    }
+    .nav-item { 
+        padding: 0.35em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item { 
+        padding: .4em;
+    }
+    ul li{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-item { 
+        padding:0.25em;
+    }
+    ul li{
+        font-size: 9px;
+    }
+}

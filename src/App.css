@@ -40,6 +40,7 @@
     padding-left: 3em;
     padding-right: 3em;
     padding-bottom: 1em;
+    width: 500px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
@@ -80,7 +81,7 @@ h2 {
     height: auto;
     width: auto;
     white-space: pre-wrap;
-    margin-left: 145px; 
+    /* margin-left: 145px;  */
     /* max-width: 775px;
     max-height: 500px; */
 }
@@ -106,15 +107,6 @@ h2 {
     
 }
 
-/* .pie-container {
-    background-color: rgb(238, 238, 238);
-    background-color: rgba(238, 238, 238, .6); 
-    border-radius: 3rem;
-    padding: 3em;
-    width: 775px;
-    height: 500px; 
-}*/
-
 .profile-pictures {
     /* display: inline-flex; */
     /* flex-direction: row; */
@@ -134,44 +126,158 @@ h2 {
     overflow:hidden;
     box-shadow: 0 8px 16px rgb(0,0,0);
     margin-bottom: 30px;
-    margin-left: 150px;
-    margin-right: 50px;
+    margin-left: 100px;
 
 }
 
 #map-content {
-    display: flex;
-    justify-content: right;
-    padding: 3em;
-    margin-left: 50px;
+    padding-bottom: 1em;
 }
-
+@media (min-width: 1201px) {
+    .bar-graph-container {
+        width: 815px;
+        height: 600px;
+        padding: 1em;
+        margin-left:160px;
+    }
+}
 @media (max-width: 1200px) {
     .bar-graph-container {
-        width: 600px;
-        height: 450px;
+        width: 570px;
+        height: 600px;
         padding: 1em;
-        margin-left:50px;
+        margin-left:160px;
     }
     .dictionary {
-        max-width: 600px;
-        
+        max-width: 600px;    
+    }
+    .app {
+        max-width: 500px;
+    }
+    .map-display {
+        width: 500px;
+        margin-right: 160px;
     }
 }
-
 
 @media (max-width: 768px) {
     #root {
         background-image: url(./assets/SmallBackground.jpg);
     }
+    .about-creators {
+        max-width: 400px;
+    }
     .bar-graph-container {
-        width: 500px;
-        height: 450px;
-        /* padding-right: 10em; */
+        width: 465px;
+        height: 525px;
+    }
+    .creator-title {
+        font-size: 16px;
     }
     .dictionary {
-        max-width: 500px;
-        padding-right: 10em;
-        
+        max-width: 490px;
+        padding-right: 10em; 
+    }
+    .map-display {
+        height: 650px;
+        margin-right: 260px;
+        width: 400px;
+    }
+    .profile-pictures--mask { 
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 665px) {
+    #root {
+        background-image: url(./assets/SmallBackground.jpg);
+    }
+    .about-creators {
+        height: 225px;
+        margin-left: 0px;
+        width: 300px;
+    }
+    .bar-graph-container {
+        height: 500px;
+        margin-left: 75px;
+        width: 375px;
+    }
+    .dictionary {
+        max-width: 400px;
+        padding-left: 5em;
+        padding-right: 15em;
+    }
+    .map-display {
+        height: 625px;
+        margin-right: 530px;
+        width: 325px;
+    }
+    .profile-pictures--mask {
+        height: 75px; 
+        margin-left: 50px;
+        width: 75px;
+    }
+}
+
+@media (max-width: 480px) {
+    #root {
+        background-image: url(./assets/SmallBackground.jpg);
+    }
+    .about-creators {
+        height: 225px;
+        margin-left: 0px;
+        padding: 0em;
+        width: 300px;
+    }
+    .bar-graph-container {
+        width: 275px;
+        height: 475px;
+    }
+    .credits {
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .dictionary {
+        max-width: 300px;
+        padding-left: 5em;
+        padding-right: 15em;
+    }
+    .map-display {
+        width: 200px;
+        height: 625px;
+        margin-right: 610px;
+    }
+}
+
+@media (max-width: 400px) {
+    #root {
+        background-image: url(./assets/SmallBackground.jpg);
+    }
+    .about-creators {
+        width: 225px;
+        height: 175px;
+    }
+    .bar-graph-container {
+        width: 200px;
+        height: 400px;
+    }
+    .creator-title {
+        font-size: 12px;
+    }
+    .credits {
+        font-size: 10px;
+    }
+    .dictionary {
+        width: 225px;
+    }
+    .profile-pictures--mask { 
+        height: 65px;
+        width: 65px;
+        margin-left: 30px;
+    }
+    .map-display {
+        width: 150px;
+        height: 625px;
+        margin-right: 700px;
     }
 }
