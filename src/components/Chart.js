@@ -1,22 +1,15 @@
-import React, { Component } from "react";
-import {
-  VerticalBarSeries,
-  XYPlot,
-  XAxis,
-  YAxis,
-  LabelSeries,
-} from "react-vis";
-import "./Chart.css";
-// import BelowPovertyLine from ".assets/lables/BelowPovertyLabel.png";
+import React, { Component } from 'react';
+import { VerticalBarSeries, XYPlot, XAxis, LabelSeries } from 'react-vis';
+import './Chart.css';
 
 class Chart extends Component {
   render() {
     const data = [
-      { x: "A", y: 15.4 },
-      { x: "B", y: 49.8 },
-      { x: "C", y: 7.8 },
-      { x: "D", y: 14.9 },
-      { x: "E", y: 12.1 },
+      { x: 'A', y: 15.4 },
+      { x: 'B', y: 49.8 },
+      { x: 'C', y: 7.8 },
+      { x: 'D', y: 14.9 },
+      { x: 'E', y: 12.1 },
     ];
     const chartWidth = 500;
     const chartHeight = 350;
@@ -36,7 +29,6 @@ class Chart extends Component {
             yDomain={chartDomain}
           >
             <XAxis className="lables" />
-            <YAxis />
             <VerticalBarSeries data={data} />
             <LabelSeries
               className="lable-series"
@@ -50,10 +42,10 @@ class Chart extends Component {
             <p>
               <ul className="key">
                 <li>A : "Below poverty line"</li>
-                <li> B: "Non-White" </li>
+                <li>B: "Non-White" </li>
                 <li>C: Linguistically Isolated</li>
                 <li>D: Less Than Highschool Education</li>
-                <li> E: Other</li>
+                <li>E: Other</li>
               </ul>
             </p>
           </XYPlot>

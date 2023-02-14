@@ -103,7 +103,7 @@ h2 {
     padding-bottom: 3em;
     width: min-content;
     max-width: 800px;
-    margin-left: 80px;
+    margin-left:150px;
     
 }
 
@@ -134,12 +134,19 @@ h2 {
     padding-bottom: 1em;
 }
 @media (min-width: 1201px) {
+    .about-creators {
+        width: 750px;
+    }
     .bar-graph-container {
         width: 815px;
         height: 600px;
         padding: 1em;
         margin-left:160px;
     }
+    .profile-pictures--mask {
+        margin-left: 175px;
+    }
+    
 }
 @media (max-width: 1200px) {
     .bar-graph-container {
@@ -179,7 +186,7 @@ h2 {
         padding-right: 10em; 
     }
     .map-display {
-        height: 650px;
+        height: 550px;
         margin-right: 260px;
         width: 400px;
     }
