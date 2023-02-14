@@ -53,18 +53,13 @@ function App() {
           <Map className="map" isLoaded={isLoaded} />{" "}
         </div>
       </div>
-
-      <div id="map-content"> {createContent(information[1])}</div>
-      {/* <div className="bar-graph-container">
-=======
       <div id="map-content" className="dictionary">
-        {' '}
+        {" "}
         {createContent(information[1])}
       </div>
       <div className="bar-graph-container">
->>>>>>> 69a70adc6f9a5018252947eacca92f86e7022df2
         <Chart />
-      </div> */}
+      </div>
       <div>
         <dl className="dictionary">
           {information.slice(2, 8).map(createContent)}

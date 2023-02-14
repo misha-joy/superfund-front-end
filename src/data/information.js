@@ -16,13 +16,6 @@ const information = [
     link: "Population Surrounding 1,857 Superfund Remedial Sites",
   },
   {
-    id: 2,
-    title: "Something Else Here",
-    info: "Why is this one so small, also the margins are wrong!! Superfund Site Names are listed along with the street/aproxmiate address.\n\nAlso listed is the site status on the National Priorities List or 'NPL'.",
-    linkURL: "https://www.epa.gov/superfund/npl-site-status",
-    link: "Current NPL Information",
-  },
-  {
     id: 3,
     title: "Health Outcomes",
     info: "According to the EPA, thousands of contaminated sites exist nationally due to hazardous waste being dumped, left out in the open, or otherwise improperly managed. These sites include manufacturing facilities, processing plants, landfills and mining sites.\n\n1 in 6 Americans lives within a 3 mile radius of a toxic waste site.\n\nAproximately 21 million people live with in 1 mile of a Superfund (~6% of the U.S. population).\n\nThe cleanup of hazardous waste sites is often arduous and lengthy, leaving nearby communities to grapple with extended exposure to toxins and the resulting serious environmental and health consequences.\n\nAccording to the EPA, hazardous substances found in and around superfund sites may irritate the skin or eyes, make it difficult to breathe, cause headaches and nausea, or result in other types of illness. Some hazardous substances can cause far more severe health effects, including:\n\n    ◦ behavioral abnormalities,\n\n    ◦ cancer,\n\n    ◦ genetic mutations,\n\n    ◦ physiological malfunctions (e.g., reproductive impairment, kidney failure, etc.),\n\n    ◦ physical deformations, and\n\n    ◦ birth defects.\n\n\n\nThe health impacts of toxic waste sites have cascading effects on family finances and the US Department of Housing and Urban Development (HUD) owns, operates, or subsidizes 18,158 properties located within one mile of Superfund sites, with the majority of HUD tenants being households of color.\n\nBlack Americans are 75% more likely to live within close proximity to a toxic waste producing facility than an American of another race.\n\n",
