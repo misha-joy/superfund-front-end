@@ -12,7 +12,6 @@ const createNavItem = (informationTerm) => {
         smooth={true}
         offset={10}
         duration={500}
-        // onClick={closeMenu}
       >
         {informationTerm.title}
       </Link>
@@ -22,8 +21,6 @@ const createNavItem = (informationTerm) => {
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
-  // const handleClick = () => setClick(!click);
-  // const closeMenu = () => setClick(false);
 
   return (
     <nav className="nav-bar">

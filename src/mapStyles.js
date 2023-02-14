@@ -1,104 +1,94 @@
-export default [
+const mapStyles = [
   {
-    featureType: "all",
-    elementType: "labels",
+    featureType: "water",
     stylers: [
       {
-        visibility: "off",
+        visibility: "on",
+      },
+      {
+        color: "#b5cbe4",
       },
     ],
   },
   {
     featureType: "landscape",
-    elementType: "all",
     stylers: [
       {
-        visibility: "on",
-      },
-      {
-        color: "#f3f4f4",
+        color: "#efefef",
       },
     ],
   },
   {
-    featureType: "landscape.man_made",
+    featureType: "road.highway",
     elementType: "geometry",
     stylers: [
       {
-        weight: 0.9,
-      },
-      {
-        visibility: "off",
+        color: "#83a5b0",
       },
     ],
   },
   {
-    featureType: "poi.park",
-    elementType: "geometry.fill",
+    featureType: "road.arterial",
+    elementType: "geometry",
     stylers: [
       {
-        visibility: "on",
-      },
-      {
-        color: "#83cead",
+        color: "#bdcdd3",
       },
     ],
   },
   {
-    featureType: "road",
-    elementType: "all",
+    featureType: "road.local",
+    elementType: "geometry",
     stylers: [
-      {
-        visibility: "on",
-      },
       {
         color: "#ffffff",
       },
     ],
   },
   {
+    featureType: "poi.park",
+    elementType: "geometry",
+    stylers: [
+      {
+        color: "#e3eed3",
+      },
+    ],
+  },
+  {
+    featureType: "administrative",
+    stylers: [
+      {
+        visibility: "on",
+      },
+      {
+        lightness: 33,
+      },
+    ],
+  },
+  {
     featureType: "road",
+  },
+  {
+    featureType: "poi.park",
     elementType: "labels",
     stylers: [
       {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "all",
-    stylers: [
-      {
         visibility: "on",
       },
       {
-        color: "#fee379",
+        lightness: 20,
       },
     ],
   },
+  {},
   {
-    featureType: "road.arterial",
-    elementType: "all",
+    featureType: "road",
     stylers: [
       {
-        visibility: "on",
-      },
-      {
-        color: "#fee379",
-      },
-    ],
-  },
-  {
-    featureType: "water",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "on",
-      },
-      {
-        color: "#7fc8ed",
+        lightness: 20,
       },
     ],
   },
 ];
+
+export default mapStyles;

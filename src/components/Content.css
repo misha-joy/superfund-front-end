@@ -1,12 +1,12 @@
 .entry {
     background-color: rgb(238, 238, 238);
     background-color: rgba(238, 238, 238, .8); 
-    color: rgb(0, 0, 0);
+    color: rgb(43, 41, 41);
     border-radius: 3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
     padding-left: 3em;
     padding-right: 3em;
     padding-bottom: 1em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
 .paragraph-display {

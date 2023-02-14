@@ -7,7 +7,6 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Content from "./components/Content";
 import information from "./data/information.js";
-import CongresSearchBox from "./components/CongressSearchBox";
 import About from "./components/About";
 
 const libraries = ["places"];

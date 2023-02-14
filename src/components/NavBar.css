@@ -12,14 +12,11 @@
 
 .nav-item:hover {
     text-decoration: underline;
-    /* color: rgb(157, 139, 157) */
 }
 
 li {
-    /* margin-top: 15%; */
     color: rgb(56, 56, 62);
     display: inline;
-    /* padding: 1em; */
     font-size: 20px;
     text-align: center;
 }
