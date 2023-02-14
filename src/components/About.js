@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 const About = () => {
   return (
     <div className="about-section">
       <div className="about-creators">
-        <h2>Created by:</h2>
+        <h2 className="creator-title">Created by:</h2>
         <div className="profile-pictures--mask">
           <img
             className="profile-pictures"
@@ -20,13 +20,14 @@ const About = () => {
           />
         </div>
         <div>
-          <p>
-            <a href="https://www.linkedin.com/in/reyna-diaz/">Reyna </a> and{" "}
+          <p className="credits">
+            <a href="https://www.linkedin.com/in/reyna-diaz/">Reyna </a> and{' '}
             <a href="https://www.linkedin.com/in/misha-craddock/">Misha</a>
-            {"   "}
+            {'   '}
+            part of{' '}
             <a href="https://adadevelopersacademy.org/">
               Ada Developers Academy
-            </a>{" "}
+            </a>{' '}
             Cohort 18
           </p>
         </div>

@@ -4,7 +4,7 @@ import './Content.css';
 const Content = (props) => {
   return (
     <div className="entry">
-      <h2>{props.title}</h2>
+      <h2 className="entry-title">{props.title}</h2>
       <p className="paragraph-display">{props.info}</p>
       <a className="links" href={props.linkURL}>
         {props.link}
