@@ -12,7 +12,7 @@ import "./Chart.css";
 class Chart extends Component {
   render() {
     const data = [
-      { x: "A", y: 15.4 },
+      { x: "Below poverty line", y: 15.4 },
       { x: "B", y: 49.8 },
       { x: "C", y: 7.8 },
       { x: "D", y: 14.9 },
@@ -46,9 +46,13 @@ class Chart extends Component {
               labelAnchorY="text-after-edge"
             />
             <p>
-              {" "}
-              A : "Below poverty line" B: "Non-White" C: Linguistically Isolated
-              D: Less Than Highschool Education E: Other{" "}
+              <ul className="key">
+                <li>A : "Below poverty line"</li>
+                <li> B: "Non-White" </li>
+                <li>C: Linguistically Isolated</li>
+                <li>D: Less Than Highschool Education</li>
+                <li> E: Other</li>
+              </ul>
             </p>
           </XYPlot>
         </div>

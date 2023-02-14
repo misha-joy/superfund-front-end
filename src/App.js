@@ -51,14 +51,13 @@ function App() {
         </div>
       </div>
       <div id="map-content"> {createContent(information[1])}</div>
-      <div className="bar-graph-container">
+      {/* <div className="bar-graph-container">
         <Chart />
-      </div>
+      </div> */}
       <div>
         <dl className="dictionary">
           {information.slice(2, 8).map(createContent)}
         </dl>
-        {/* <CongresSearchBox /> */}
       </div>
       <footer>
         <About className="about" />

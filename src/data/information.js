@@ -10,18 +10,20 @@ const information = [
   },
   {
     id: 0,
-    title: "Something Else Here",
-    info: "Why is this one so small, also the margins are wrong!! Superfund Site Names are listed along with the street/aproxmiate address.\n\nAlso listed is the site status on the National Priorities List or 'NPL'.",
-    linkURL: "https://www.epa.gov/superfund/npl-site-status",
-    link: "Current NPL Information",
+    title:
+      "Effects of Toxic Waste Sites Disproportionally Impact Low Income Communities and Communities of Color",
+    info: "While there is no single way to characterize communities living within one mile of a designated Superfund site, the population is statistically more likely to include individuals of Color, low income families, those speaking a language other than English ('linguistically isolated'), and those with less than a highschool education.\n\n For specific statistics:  ",
+    linkURL:
+      "https://www.epa.gov/sites/default/files/2015-09/documents/webpopulationrsuperfundsites9.28.15.pdf",
+    link: "Population Surrounding 1,857 Superfund Remedial Sites",
   },
   {
     id: 2,
     title: "Health Outcomes",
     info: "According to the EPA, thousands of contaminated sites exist nationally due to hazardous waste being dumped, left out in the open, or otherwise improperly managed. These sites include manufacturing facilities, processing plants, landfills and mining sites.\n\n1 in 6 Americans lives within a 3 mile radius of a toxic waste site.\n\nAproximately 21 million people live with in 1 mile of a Superfund (~6% of the U.S. population).\n\nThe cleanup of hazardous waste sites is often arduous and lengthy, leaving nearby communities to grapple with extended exposure to toxins and the resulting serious environmental and health consequences.\n\nAccording to the EPA, hazardous substances found in and around superfund sites may irritate the skin or eyes, make it difficult to breathe, cause headaches and nausea, or result in other types of illness. Some hazardous substances can cause far more severe health effects, including:\n\n    ◦ behavioral abnormalities,\n\n    ◦ cancer,\n\n    ◦ genetic mutations,\n\n    ◦ physiological malfunctions (e.g., reproductive impairment, kidney failure, etc.),\n\n    ◦ physical deformations, and\n\n    ◦ birth defects.\n\n\n\nThe health impacts of toxic waste sites have cascading effects on family finances and the US Department of Housing and Urban Development (HUD) owns, operates, or subsidizes 18,158 properties located within one mile of Superfund sites, with the majority of HUD tenants being households of color.\n\nBlack Americans are 75% more likely to live within close proximity to a toxic waste producing facility than an American of another race.\n\n",
     linkURL:
-      "https://www.epa.gov/sites/default/files/2015-09/documents/webpopulationrsuperfundsites9.28.15.pdf",
-    link: "Population Surrounding 1,857 Superfund Remedial Sites, September 2020",
+      "https://www.catf.us/wp-content/uploads/2017/11/CATF_Pub_FumesAcrossTheFenceLine.pdf",
+    link: "Fumes Across the Fence Line",
   },
   {
     id: 11,
@@ -55,6 +57,7 @@ const information = [
     title: "Learn More",
     info: "Information for this page was gathered from:\n\n-- Kiaghadi, A., Rifai, H.S. & Dawson, C.N.\nThe presence of Superfund sites as a determinant of life expectancy in the United States.\nNat Commun 12, 1947 (2021). https://doi.org/10.1038/s41467-021-22249-2\n\n-- The Environmental Protection Agency's database for Superfund Management.\n\n -- U.S. EPA, Office of Land and Emergency Management 2020.\nData collected includes: (1) Superfundsite information from SEMS as of the end of FY2019 and site boundary data from FY 2014 FOIA Request;\nand (2) population data from the 2015-2018 American Community Survey.",
   },
+
   {
     id: 6,
     title: "Take Action",

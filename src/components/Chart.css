@@ -6,7 +6,11 @@ h2 {
     color: rgb(146, 146, 163);
     text-align: center;
     width: 100%;
+}
 
+li {
+    align-items: center;
+    font-size: 50px;
 }
 .key {
     font-size: 10 px;
