@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from 'react';
 
 const CongresSearchBox = () => {
+  const [userInput, setUserInput] = useState('');
   return (
     <div>
       <p>
@@ -33,14 +34,15 @@ const CongresSearchBox = () => {
                 class="locsuggest"
                 name="q"
                 placeholder="Enter State and District Number"
-                value=""
+                value={userInput}
+                onChange={(e) => setUserInput(e.target.value)}
               ></input>
               <button class="search_submit" id="search-submit" type="submit">
                 GO
               </button>
             </div>
           </div>
-        </form>{" "}
+        </form>{' '}
       </p>
     </div>
   );

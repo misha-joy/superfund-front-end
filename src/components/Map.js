@@ -3,15 +3,15 @@ import {
   Marker as GoogleMarker,
   MarkerClusterer,
   StandaloneSearchBox,
-} from "@react-google-maps/api";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import CustomMarker from "../assets/Blue.png";
-import InfoWindow from "./InfoWindow";
-import mapStyles from "../mapStyles";
-import "./Map.css";
+} from '@react-google-maps/api';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import CustomMarker from '../assets/Blue.png';
+import InfoWindow from './InfoWindow';
+import mapStyles from '../mapStyles';
+import './Map.css';
 
-const kBaseUrl = "https://superfund-back-end.herokuapp.com/superfunds";
+const kBaseUrl = 'https://superfund-back-end.herokuapp.com/superfunds';
 
 const getAllSuperfundsApi = () => {
   return axios
@@ -34,9 +34,10 @@ const Map = (props) => {
   });
   const [zoom, setZoom] = useState(3);
   const containerStyle = {
-    width: "500px",
-    height: "500px",
+    width: '500px',
+    height: '500px',
   };
+
   const center = mapCenter;
   const onLoad = (ref) => (window.searchBox = ref);
 
@@ -77,12 +78,12 @@ const Map = (props) => {
                 {markersData.map((marker) => {
                   return (
                     isLoaded && (
-                      <div key={marker["SITE_ID"]}>
+                      <div key={marker['SITE_ID']}>
                         <GoogleMarker
                           clusterer={clusterer}
                           position={{
-                            lat: marker["LATITUDE"],
-                            lng: marker["LONGITUDE"],
+                            lat: marker['LATITUDE'],
+                            lng: marker['LONGITUDE'],
                           }}
                           options={{ icon: CustomMarker }}
                           onClick={() => {
